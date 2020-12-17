@@ -8,7 +8,11 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Phone.belongsTo(models.Cpu, {
+        foreignKey: 'cpuId',
+        onDelete: 'RESTRICT',
+        onUpdate: 'CASCADE',
+      });
     }
   }
   Phone.init(
@@ -45,14 +49,6 @@ module.exports = (sequelize, DataTypes) => {
           min: 0,
         },
       },
-      cpu: {
-        allowNull: false,
-        type: DataTypes.STRING,
-        validate: {
-          notNull: true,
-          notEmpty: true,
-        },
-      },
       screenDiagonal: {
         allowNull: false,
         type: DataTypes.REAL,
@@ -60,19 +56,23 @@ module.exports = (sequelize, DataTypes) => {
           notNull: true,
           min: 0,
         },
-        isHaveNfc: {
-          allowNull: false,
-          type: DataTypes.BOOLEAN,
-          validate: {
-            notNull: true,
-          },
+      },
+      isHaveNfc: {
+        allowNull: false,
+        type: DataTypes.BOOLEAN,
+        validate: {
+          notNull: true,
         },
+      },
+      cpuId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
       },
     },
     {
       underscored: true,
       sequelize,
-      modelName: 'phone',
+      modelName: 'Phone',
       indexes: [
         {
           unique: true,
