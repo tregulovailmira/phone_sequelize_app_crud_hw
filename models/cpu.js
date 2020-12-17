@@ -16,6 +16,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   Cpu.init(
     {
+      name: {
+        type: DataTypes.STRING(32),
+        allowNull: false,
+        validate: {
+          notNull: true,
+          notEmpty: true,
+        },
+      },
       numberOfCores: {
         allowNull: false,
         type: DataTypes.INTEGER,
