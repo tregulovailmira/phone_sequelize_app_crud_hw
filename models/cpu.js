@@ -48,7 +48,7 @@ module.exports = (sequelize, DataTypes) => {
           notEmpty: true,
         },
       },
-      technicalPtocessNm: {
+      technicalProcessNm: {
         allowNull: false,
         type: DataTypes.INTEGER,
         validate: {

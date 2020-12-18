@@ -1,0 +1,107 @@
+POST http://localhost:3000/api/cpus/1/phones
+Content-Type: application/vnd.api+json
+
+{
+    "brand": "Meizu",
+    "model": "Pro 7",
+    "yearOfIssue": "2017",
+    "RamSizeGb": 4,
+    "screenDiagonal": 5.2,
+    "isHaveNfc": false
+}
+
+# POST http://localhost:3000/api/cpus/1/phones
+# Content-Type: application/vnd.api+json
+
+# {
+#     "brand": "Meizu",
+#     "model": "Pro 7 Plus",
+#     "yearOfIssue": "2017",
+#     "RamSizeGb": 6,
+#     "screenDiagonal": 5.7,
+#     "isHaveNfc": false
+# }
+
+# POST http://localhost:3000/api/cpus/2/phones
+# Content-Type: application/vnd.api+json
+
+# {
+#     "brand": "Samsung",
+#     "model": "Galaxy S10 Plus",
+#     "yearOfIssue": "2019",
+#     "RamSizeGb": 12,
+#     "screenDiagonal": 6.4,
+#     "isHaveNfc": true
+# }
+
+# POST http://localhost:3000/api/cpus/2/phones
+# Content-Type: application/vnd.api+json
+
+# {
+#     "brand": "Samsung",
+#     "model": "Galaxy S10",
+#     "yearOfIssue": "2019",
+#     "RamSizeGb": 8,
+#     "screenDiagonal": 6.1,
+#     "isHaveNfc": true
+# }
+
+# POST http://localhost:3000/api/cpus/2/phones
+# Content-Type: application/vnd.api+json
+
+# {
+#     "brand": "Samsung",
+#     "model": "Galaxy S10e",
+#     "yearOfIssue": "2019",
+#     "RamSizeGb": 6,
+#     "screenDiagonal": 5.8,
+#     "isHaveNfc": true
+# }
+
+# POST http://localhost:3000/api/cpus/3/phones
+# Content-Type: application/vnd.api+json
+
+# {
+#     "brand": "Xiaomi",
+#     "model": "Redmi Note 8 Pro",
+#     "yearOfIssue": "2019",
+#     "RamSizeGb": 6,
+#     "screenDiagonal": 6.53,
+#     "isHaveNfc": true
+# }
+
+# POST http://localhost:3000/api/cpus/3/phones
+# Content-Type: application/vnd.api+json
+
+# {
+#     "brand": "Oppo",
+#     "model": "Realme 6S",
+#     "yearOfIssue": "2020",
+#     "RamSizeGb": 6,
+#     "screenDiagonal": 6.5,
+#     "isHaveNfc": true
+# }
+
+# POST http://localhost:3000/api/cpus/4/phones
+# Content-Type: application/vnd.api+json
+
+# {
+#     "brand": "Meizu",
+#     "model": "16s Pro",
+#     "yearOfIssue": "2019",
+#     "RamSizeGb": 8,
+#     "screenDiagonal": 6.2,
+#     "isHaveNfc": true
+# }
+
+# POST http://localhost:3000/api/cpus/4/phones
+# Content-Type: application/vnd.api+json
+
+# {
+#     "brand": "Asus",
+#     "model": "ROG Phone 2",
+#     "yearOfIssue": "2019",
+#     "RamSizeGb": 12,
+#     "screenDiagonal": 6.59,
+#     "isHaveNfc": true
+# }

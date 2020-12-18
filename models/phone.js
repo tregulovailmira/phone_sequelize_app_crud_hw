@@ -9,7 +9,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Phone.belongsTo(models.Cpu, {
-        foreignKey: 'cpuId',
         onDelete: 'RESTRICT',
         onUpdate: 'CASCADE',
       });
@@ -63,10 +62,6 @@ module.exports = (sequelize, DataTypes) => {
         validate: {
           notNull: true,
         },
-      },
-      cpuId: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
       },
     },
     {
