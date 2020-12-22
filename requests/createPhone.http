@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/phones
+Content-Type: application/vnd.api+json
+
+{
+    "brand": "Samsung",
+    "model": "pro 7++",
+    "yearOfIssue": "2017",
+    "RamSizeGb": 6,
+    "screenDiagonal": 5.1,
+    "isHaveNfc": false,
+    "cpuId": 1
+}

@@ -3,24 +3,12 @@ Content-Type: application/vnd.api+json
 
 {
     "brand": "Meizu",
-    "model": "Pro 7",
+    "model": "Pro 7 Plus",
     "yearOfIssue": "2017",
-    "RamSizeGb": 4,
-    "screenDiagonal": 5.2,
+    "RamSizeGb": 6,
+    "screenDiagonal": 5.7,
     "isHaveNfc": false
 }
-
-# POST http://localhost:3000/api/cpus/1/phones
-# Content-Type: application/vnd.api+json
-
-# {
-#     "brand": "Meizu",
-#     "model": "Pro 7 Plus",
-#     "yearOfIssue": "2017",
-#     "RamSizeGb": 6,
-#     "screenDiagonal": 5.7,
-#     "isHaveNfc": false
-# }
 
 # POST http://localhost:3000/api/cpus/2/phones
 # Content-Type: application/vnd.api+json
